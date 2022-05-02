@@ -1,0 +1,120 @@
+<html>
+<head>
+<Title>Encontros</Title>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    
+<link href="../css/DracStyle.css" rel = "stylesheet"/>
+    
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">
+    
+<script src="../js/scripts.js"></script>
+
+    
+</head>
+<body>
+    
+    
+<div id="conteiner">
+<header>
+<!-- TÍTULO ENSANGUENTADO -->
+    <h1 id="bloody-title">Conde Drácula</h1>
+</header>
+
+<main>
+    <!-- INTRODUÇÃO -->
+    <div class="introducao-drac active"> <!--FASE ZERO -->
+        <p>
+            O que o grande Conde Drácula em sua solitária fortaleza na Romênia esperava das suas noites era ouvir o grito dos humanos enquando sugava suas almas com suas presas. O que vinha o acordando, entretanto, eram vozes adolescentes agudas, que, sobretudo,  gritavam pelo seu nome e imploravam por uma transformação que só ele poderia realizar. <br> Não demorou para que descobrisse o motivo daquela confusão. Estava sob o efeito fervoroso do maior lançamento daquele ano: Crepúsculo! Extremamante debilitado pela interrupção de seu hibernar diurno e o espaçamento de suas caçadas, o Conde decidiu que estava na hora de tomar medidas drásticas. Iria encontrar os causadores do seu caos...        </p>
+        
+    <button onclick='verifica("dracula" ,0,"introducao-drac", "fase-um")'>Responder</button>
+    </div> 
+    
+    <div class="fase-um fases">  <!--FASE UM -->
+        <p>
+           Drácula chega à Forks ao anoitecer, vendo a pacata cidade complemente vazia e ouvindo apenas o grasnar dos pássaros ao seu redor. Sua ultima alimentação havia sido horas atrás e um cheiro doce e gostoso o atraiu assim que pisou na cidade. Começava a entender as motivações dos outros vampiros de continuar ali, apesar de questionar a escolha de um local tão público para se abrigar.
+        </p>
+        
+    <button onclick='verifica("dracula",1,"fase-um", "fase-quatro", "fase-dois")'>Responder</button>  <!--Se a pessoa escolher B, que é o caminho mais certo, vai para fase quatro. Caso contrário, se escolher A, vai utilizar o modificador e ir para fase 2 -->
+    </div>
+    
+    <!-- ROTA A: Se ele responder que quer seguir o cheiro -->
+       <div class="fase-dois fases" > <!--FASE 2 -->
+        <p>
+           O cheiro o leva até um sobrado, localizado próximo demais da beirada da floresta. Não conseguiu segurar sua ansiedade, e escalou a lateral de madeira às pressas. A janela daquele quarto estava aberta e ele conseguiu distinguir os emaranhados cabelos castanhos de uma garota extremamente pálida. <br> Seu coração não batia mais, mas tinha certeza que, se ainda houvesse vida em seu corpo, estaria com a pulsação acelerada: aquela garota deitada o lembrava demais de sua esposa, Elisabeta. Ele havia jurado desde a sua conversão a vampiro que encontraria sua esposa em alguma reencarnação. Seria esse o momento?
+        </p>
+        
+    <button onclick='verifica("dracula","2","fase-dois", "fase-tres")'>Responder 2A</button>
+    </div> 
+    
+    <div class="fase-tres fases"> <!--FASE 3 -->
+        <p>
+            Eram dois vampiros, estava claro pela postura ferina com que o atacaram e pelas presas reluzentes exibidas com clareza. Mas como sabiam que estava ali? A ponto de o parar no momento exato! Quem era a garota que dormia? E o mais esquisito: por que seus olhos brilhavam dourados ao invés de vermelhos?<br> 
+            —Vamos para fora! — Disse o homem, enquanto a menina com postura de fada o encarava com certo temor. <br>
+            O cheiro ainda era muito atrativo, mas decidiu seguir aqueles dois para fora do quarto... não era como se não pudesse terminar depois. <br>
+            —Eu sei que está confuso. — Disse a mulher de cabelos repicados. <br>
+            E, ainda que Drácula não tivesse perguntado nada... lá estavam eles explicando as regras daquela cidade.
+            <br> Como gostavam de falar...!
+        </p>
+         <button onclick='verifica("dracula","3","fase-tres", "fase-quatro")'>Responder 3A</button>
+
+    </div>
+    
+    <div class="fase-quatro fases"> <!--FASE 4: se a pessoa escolher B na fase 1, e se passar pela fase 3A escolhendo "ouvir"  -->
+        <p>
+            Conforme seguia pela densa floresta de Forks, avistou uma casa enorme, bem afastada dos humanos. Era ali que os vampiros da cidade residiam? Drácula encarava as vidraças com curiosidade... como se protegiam da luz solar? Por dentro, ainda preferia seu luxuoso e gótico castelo. <br> Quando chegou de fato na clareira que comportava a mansão moderna, os outros vampiros já o esperavam. Foi possível perceber que, talvez, só talvez, a velocidade deles fosse superior a sua, mas preferia colocar a culpa na má alimentação. Viu cinco figuras saindo pela porta da casa mais calmamente... então aquela era a família Cullen. 
+            -Vamos conversar? - Disse um homem, que parecia o líder deles. 
+        </p>
+    
+        <button onclick='verifica("dracula","4","fase-quatro", "fase-seis", "fase-cinco")'>Responder 3A</button>
+
+        
+    </div>
+    
+     <div class="fase-cinco fases"> <!--FASE 5 - FINALIZA O JOGO  -->
+        <p>
+            Conversar? Ele queria conversar? Depois de o arrastar para uma floresta escura, achava mesmo que ia acreditar naquela boboseira? Viera a Forks com o único motivo de compreender porque adolescentes idiotas passaram a idolatrar vampiros do nada - por que Edward estava rindo? - mas tudo que conseguiu foi um cansaço excessivo e nenhuma vontade de conversa! Estava farto!
+        </p>
+    
+        <button onclick='verifica("dracula","5","fase-cinco", "gameover-vitoria")'>Responder 3A</button>
+    </div>
+    
+    <div class="fase-seis fases"> <!--FASE 6 - opção OUVIR  -->
+        <p>
+            Vampiros que brilham? Se alimentam de sangue animal? Tem poderes mentais? Que história era aquela? Parecia mentira! Mas quando Carlisle - pelo menos assim ele tinha se identificado - contou o motivo de seus olhos dourados, parecia que tudo estava se encaixando. De um jeito assustador, mas bem palpável. Uma familia de vampiros do bem... agora entendia a motivação daquela história ter viralizado entre os adolescentes. No fim da história, Carlisle perguntou o que ele gostaria de fazer mediante toda aquela bizarrice...
+        </p>
+    
+        <button onclick='verifica("dracula","6","fase-seis", "fase-oito", "fase-cinco")'>Responder 3A</button>
+    </div>
+    <!-- fase 7 = fase 5 -->
+    
+    <div class="fase-oito fases"> <!--FASE 8 - opção OUVIR  -->
+        <p>
+          Drácula deu seu máximo ao se embrenhar pela floresta, deixando seus instintos guiarem seus passos. Mas ainda assim, era possível ver que aquele grupo permanecia sempre a sua frente.  Eles eram certamente mais velozes! Contudo, o Conde ainda era realeza, e, se por um lado perdia em velocidade, por outro, ganhava nos sentidos. <br>
+          O cheiro meio desgostoso de um cervo encheu suas narinas e todo o seu corpo implorava para que desse meia volta e bebesse sangue humano. Mas ele tinha palavra! Numa cena animalesca, cravou suas pontudas presas no corpo do animal, vendo ele travar imediatamente... O clã Cullen o observava. 
+        </p>
+    
+        <button onclick='verifica("dracula",8,"fase-oito", "gameover-vitoria")'>Responder 3A</button>
+    </div>
+    
+      <div class="gameOver fases">
+        <h1> Game Over </h1>
+    <button> <a href = "index.html"> Voltar! </a></button>
+    </div>
+    
+      <div class="gameOver-vitoria fases">
+        <h1> Game Over - VITÓRIA </h1>
+    <button> <a href = "index.html"> Voltar! </a></button>
+    </div>
+    
+</main>
+    
+</div>
+    
+    
+</body>
+</html>

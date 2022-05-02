@@ -1,0 +1,1 @@
+Projeto da turma Stone-Resilia, para criação de um Quiz baseado num tema pré determinado utilizando as tecnologias HTML + CSS + Js.
