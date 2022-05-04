@@ -18,7 +18,7 @@ body {
 
 #conteiner {
     width: 60vw;
-    min-height: 80vh;
+    min-height: 85vh;
     margin: 3% auto auto auto;
     display: flex;
     flex-direction: column;
@@ -62,7 +62,7 @@ main {
 .fases p {
     font-family: cursive;
     color: white;
-    text-align: center;
+    font-size: 16px;
 }
 
 .fases button {

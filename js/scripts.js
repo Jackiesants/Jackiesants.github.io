@@ -197,7 +197,7 @@ const bladeView =  //perguntas e respostas pré definidas para a rota do drácul
        
     },
     
-    //FASE 1: DUAS PERGUNTAS
+    //FASE 1: punhais
     {
         "pergunta":
         {
