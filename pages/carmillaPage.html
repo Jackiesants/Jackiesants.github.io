@@ -1,0 +1,73 @@
+<html>
+<head>
+<Title>Carmilla</Title>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    
+<link href="../css/carmillaStyle.css" rel = "stylesheet"/>
+    
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">
+    
+<script src="../js/scripts.js"></script>
+
+    
+</head>
+<body>
+    
+    
+<div id="conteiner">
+<header>
+<!-- TÍTULO ENSANGUENTADO -->
+    <h1 id="bloody-title">Carmilla</h1>
+</header>
+
+<main>
+    <!-- INTRODUÇÃO -->
+    <div class="introducao-carmilla active"> <!--FASE ZERO -->
+        <p>
+            Camille vagava de cidade em cidade, se alimentando de garotas inocentes demais para desconfiar de sua amizade repentina. Mas foi o sangue de Bella que a atraiu para Forks. 
+            Não foi dificil se aproximar: Bella estava no ensino médio, Camille seguiu a ideia e logo logo estava pronta, contando sua história triste e sendo abrigada no pequeno sobrado que servia como casa para garota. Contudo, para sua tristeza, descobriu muito rápido que havia outro vampiro na área.
+
+        </p>
+        
+    <button onclick='verifica("carmilla",0,"introducao-carmilla", "fase-um", "gameOver")'>Prosseguir</button>
+    </div> 
+    
+    <div class="fase-um fases">  <!--FASE UM: Escolheu levar os punhais -->
+        <p>
+          Bella já estava mais pálida, conforme Camille se alimentava de sua vitalidade enquanto ela dormia. As pessoas ao redor já conseguiam perceber que sua saúde não estava muito boa e, Edward ia levá-la para ver Carlisle - que é médico. Camile foi convidada... mas ela conhecia carlisles de épocas passadas.
+
+        </p>
+        
+    <button onclick='verifica("carmilla",1,"fase-um", "fase-dois", "gameOver")'>Prosseguir </button>  
+    </div>
+    
+       <div class="fase-dois fases" > <!--FASE 2- SE ESCOLHEU MATAR O LOBO -->
+        <p>
+            Bella voltou razoavelmente melhor da casa dos Cullen, mas Edward estava muito esquisito. Carmilla era uma vampira, e ele não via ela se alimentando com a frequencia necessaria. Mesmo que ela dissesse que seus hábitos eram "vegetarianos" era dificil acreditar naquilo.
+        </p>
+        
+    <button onclick='verifica("carmilla","2","fase-dois", "gameOver-vitoria", "gameOver")'>Prosseguir</button>
+    </div> 
+    
+    
+      <div class="gameOver fases">
+        <h1> Game Over </h1>
+    <button> <a href = "index.html"> Voltar! </a></button>
+    </div>
+    
+      <div class="gameOver-vitoria fases">
+        <h1> Game Over - VITÓRIA </h1>
+    <button> <a href = "index.html"> Voltar! </a></button>
+    </div>
+</main>
+    
+</div>
+    
+    
+</body>
+</html>

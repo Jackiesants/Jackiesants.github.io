@@ -1,0 +1,117 @@
+<html>
+<head>
+<Title>Encontros</Title>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    
+<link href="../css/bladeStyle.css" rel = "stylesheet"/>
+    
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">
+    
+<script src="../js/scripts.js"></script>
+
+    
+</head>
+<body>
+    
+    
+<div id="conteiner">
+<header>
+<!-- TÍTULO ENSANGUENTADO -->
+    <h1 id="bloody-title">Blade</h1>
+</header>
+
+<main>
+    <!-- INTRODUÇÃO -->
+    <div class="introducao-blade active"> <!--FASE ZERO -->
+        <p>
+           Blade era um homem simples e fácil de se agradar, só queria um mundo limpo do que ele apelidou como seres da noite.
+            Um mundo livre dos vampiros! Prometeu isso para si mesmo desde que aquele demônio matou sua mãe e o contaminou. Quem diria? Foi justamente o veneno de um vampiro que deu início a extinção da espécie! E ele dizia isso porque, pela primeira vez em anos, sabia que estava muito perto de concluir seus objetivos. Mas, para isso, ainda faltava uma família em especial... Os Cullen!
+            <br><br>
+            A viagem da Inglaterra para Forks, nos Estados Unidos foi tranquila. E, ao perceber o quão nublado, chuvoso e verde era aquele lugar,quase não fez sentido a presença de sugadores de sangue. Numa cidade minúscula como aquela, como eles iam conseguir esconder as vítimas? Deixou de pensar naquilo, focando em qual arma ia escolher para o embate. O sol já estava se escondendo atrás dos morros, era hora da ação: 
+
+        </p>
+        
+    <button onclick='verifica("blade",0,"introducao-blade", "fase-tres", "fase-um")'>Prosseguir</button>
+    </div> 
+    
+    <div class="fase-um fases">  <!--FASE UM: Escolheu levar os punhais -->
+        <p>
+           Com sua mochila carregando seus punhais de madeira, embrenhou-se na floresta escura, utilizando seus sentidos aguçados para se guiar. Estava em posicação de luta, pronto para qualquer ação desesperada que fosse necessário, mas tudo parecia tranquilo. Andou por alguns minutos antes que um barulho o fizesse travar. Estava o vendo...! Por detrás de alguns arbustos, viu o corpo enorme e peludo do que era claramente um lobo... não, era grande demais. Blade já havia estado naquela situação algumas outras vezes. O Lobisomem rosnou para si, avançando em sua direção. A luta que se seguiu estava longe de ser limpa, mas o caçador conseguiu imobilizar a fera.
+        </p>
+        
+    <button onclick='verifica("blade",1,"fase-um", "fase-quatro", "fase-dois")'>Prosseguir </button>  
+    </div>
+    
+       <div class="fase-dois fases" > <!--FASE 2- SE ESCOLHEU MATAR O LOBO -->
+        <p>
+O uivo de desespero preencheu todo o silêncio daquele lugar, e o caçador observou quando o enome lobo peludo se transformou em um jovem adolescente quileute. Algo o dizia que aquela não era a melhor decisão... quando ouviu o trotar furioso de dezenas de outros animais vinham em sua direção. O maior deles, um lobo preto, voltou a forma humana na sua frente.
+        </p>
+        
+    <button onclick='verifica("blade","2","fase-dois", "fase-tres")'>Prosseguir</button>
+    </div> 
+    
+    <div class="fase-tres fases"> <!--FASE 3 -->
+        <p>
+        Ele sentia aquele cheiro, apesar de notar uma diferença bem no fundo. Algo menos forte... ele estava acostumado a sentir o cheiro de ferro do sangue humano nos vampiros, e aqueles também tinham essa característica ferrosa mas tão, tão mais leve. Antes que pudesse perder tempo julgando a arquitetura moderna da casa, cinco seres pálidos pararam na sua frente.
+<br> -Está em nossa procura? - Perguntou o mais velho, que parecia ser o líder.
+<br> -As notícias correm rápido aqui...
+<br> -Cidade pequena.
+<br> -Pois bem, nós não somos o tipo de vampiro que você está acostumado... bebemos sangue animal. Olha, podemos conversar?
+
+        </p>
+         <button onclick='verifica("blade","3","fase-tres", "fase-cinco", "fase-quatro")'>Prosseguir</button>
+
+    </div>
+    
+    <div class="fase-quatro fases"> <!--FASE 4: Se decidiu lutar na fase 3  -->
+        <p>
+       Observou atentamente a formação daquela família. Estava confiante da sua vitória. Possuía suas lâminas e sua bomba de luz. Resolveu começar pela bomba, seria o suficiente para tirar o foco deles! Jogou a bomba no chão, vendo a luz explodir e as partículas de prata se espalharem para todo lugar... era isso! Ou não? O que estava havendo, aquele ataque parecia não ter feito nenhum estrago! Era hora de ir para o combate corpo-a-corpo! Era dificil lutar com os cinco, eles eram experientes no assunto, mas Blade conseguia ver sua lâmina gerando feridas que era automaticamente curadas. Aquilo não estava certo... a prata não os afetava? Em um momento, estava confiante, no outro, imobilizado... Carlisle lhe ofereceu rendição.
+        </p>
+    
+        <button onclick='verifica("blade","4","fase-quatro", "gameOver-vitoria", "game-over")'>Prosseguir</button>
+
+        
+    </div>
+    
+     <div class="fase-cinco fases"> <!--FASE 5 - se decidiu ouvir na fase 3  -->
+        <p>
+          Carlisle começou a explicar seu modo de vida. Não se consideravam maus vampiros, e viam aquela transformação como maldição. Não se alimentavam de seres humanos e ele era médico. O pensamento da família Cullen não era o pensamento normal dos vampiros, apesar de haver vampiros da raça deles que eram malignos como os que Blade conhecia.
+        </p>
+    
+        <button onclick='verifica("blade","5","fase-cinco", "gameOver-vitoria", "fase-quatro")'>Prosseguir</button>
+    </div>
+    
+    <div class="fase-seis fases"> <!--FASE 6 - opção OUVIR  -->
+        <p>
+            Blade era conhecido por ter nennhuma compaixão com aquele tipo de criatura, mas, no olhar dele, bem la no fundo, sentiu que simplesmente acabar sua vida ali não era o certo. Ele não estava ali para matar lobos, estava ali para matar vampiros. 
+        <br> -Obrigado - gritou o garoto, parecia bem jovem, e bem assustado. 
+        <br> -Não estou aqui por você, estou pelos vampiros. Vá embora...
+        <br> -Vampiros? Quer dizer os Cullen? Nós não gostamos deles também!
+        <br> Deixar o garoto vivo acabou sendo útil, já que ele lhe deu a localização exata da família de demônios. Seus punhais haviam sido quebrados, então ele voltou na cabana para se munir das lâminas corpo a corpo e da bomba de luz. Agora sabia para onde ir. Mas será que deveria mesmo enfrentar os seres dessa cidade?
+
+        </p>
+    
+        <button onclick='verifica("blade","6","fase-seis", "fase-tres", "gameOver")'>Responder 3A</button>
+    </div>
+ <div class="gameOver fases">
+        <h1> Game Over </h1>
+    <button> <a href = "index.html"> Voltar! </a></button>
+    </div>
+    
+      <div class="gameOver-vitoria fases">
+        <h1> Game Over - VITÓRIA </h1>
+    <button> <a href = "index.html"> Voltar! </a></button>
+    </div>    
+  
+</main>
+    
+</div>
+    
+    
+</body>
+</html>

@@ -172,26 +172,229 @@ const dracView =  //perguntas e respostas pré definidas para a rota do drácula
       
     }   
     
-]
+];
 
-function verifica(personagem, fase, classeAntiga, classeAtual, ClasseModificadora) {    //vai verificar o personagem, a fase e as telas 
+
+const bladeView =  //perguntas e respostas pré definidas para a rota do drácula
+[       //FASE 0
+    {
+        "pergunta":
+        {
+            "numero": "0", 
+            "texto": "E agora? O que Blade deve levar? \n A) Blade leva seus punhais de madeira em formato de cruz \n B) Blade leva facas para combate corpo a corpo e bombas de luz"
+
+        },
+        "certa": 
+        {
+            "letra": "B",
+            "texto": "Resposta B)\n Blade decide que é melhor levar suas facas para combate corpo a corpo e bombas de luz"
+        },
+        "primeiroCenarioErro":
+        {
+            "letra": "A",
+            "texto": "Resposta A)\n 'A melhor opção é levar meus punhais de madeira em formato de cruz', pensou, guadando-os na cintura "
+        }
+       
+    },
+    
+    //FASE 1: DUAS PERGUNTAS
+    {
+        "pergunta":
+        {
+            "numero": "1",  
+            "texto": "Encontrar um lobisomem não estava nos seus planos? E agora, o que Blade deve fazer? \n A) Usar punhais de madeira para abater o lobisomem \n B) Deixar o lobisomem viver "
+        }, 
+        "certa":
+        {
+            "letra": "B",
+            "texto": "Resposta B)\n Ele não estava ali para caçar lobisomens, não ia perder seu tempo"
+        },
+        "primeiroCenarioErro": 
+        {
+            "letra": "A",
+            "texto": "Resposta A)\n Já estava ali mesmo, se pudesse abater duas feras, então era melhor para ele "
+
+        }
+    },
+
+    //FASE 2 -MATOU O LOBO
+    {
+      "pergunta":
+        {
+            "numero": "2",  
+            "texto": "Há uma alcateia bem na sua frente. Qual ação Blade deve tomar? \n  A) Tentar conversar \n B)Tentar lutar \n C) Fugir" 
+        }, 
+        "certa":  
+        {
+            "letra": "C",
+            "texto": "Resposta C) Ele tinha experiência, sabia quais as lutas tinha que lutar e quais tinha que deixar de lado. Aquela era um clássico 'deixar de lado'. Entrou na floresta, tentando correr desviando das árvores. Dava para ouvir os lobos atrás de si e ele tinha quase certeza que seria pego, ainda que tivesse supervelocidade. Contudo, após passar por um espaço específico, eles simplesmente pararam o observando avançar... estranho."
+        },
+        "primeiroCenarioErro":
+        {
+            "letra": "B",
+            "texto": "Resposta B)\n Blade decidiu lutar! Estava naquela estrada há muitos anos e sabia lidar com uma alcateia dequelas. E, de fato, ele conseguiu abater um ou dois com sua super força e agilidade, mas eles eram muitos. Antes de ter seu tronco estilhaçado pelas presas ferozes, encarou o corpo do jovem adolescente com suas estacas de madeira cravadas."
+        },
+        "segundoCenarioErro":
+        {
+            "letra": "A",
+            "texto": "Resposta A)\n - Você matou um dos nossos! - Disse Sam, o líder da alcateia. - E esse cheiro... você não é humano. \n  Blade conseguia sentir o nervosismo dos outros lobos. Se continuasse daquele jeito, seria um homem morto em poucos minutos. Decidiu que tentaria negociar: \n -Não vim em busca de vocês, vim atrás dos vamp... \n Mas antes que pudesse terminar de falar, todos eles vieram em sua direção. Ele não teve a minima chance." 
+        }, 
+        
+    },
+    
+    //FASE 3 -- SE ESCOLHEU LÂMINAS OU ESCOLHEU FUGIR DA ALCATEIA 
+    {
+      "pergunta": {
+                    "numero": "3",  
+                    "texto": "Carlisle quer conversar, mas o que Blade quer?  \n A)Ouvir o outro \n B) Começar uma luta "
+        },    
+        "certa": {
+                "letra": "A",
+                "texto": "Resposta A)Drácula deciciu ouvir o que o vampiro tinha a dizer, mas já estava cansado daquela falta de ação."
+                },
+        "primeiroCenarioErro": {
+            "letra": "B",
+            "texto": "Resposta B)Não queria ladainhas, queria resolver seu problema! Iria com tudo de uma vez!"
+        }
+    },
+    //FASE 4 -- SE DECIDIU LUTAR NA FASE 3
+    {
+        "pergunta": {
+                    "numero": "4",  
+                    "texto": "Os ataques de Blade não estavam sendo eficazes. Rápido, o que ele deve fazer? A) Render B)Continuar a lutar"
+        }, 
+        "certa": {
+                "letra": "A",
+                "texto": "Resposta A)\n Decidiu se render. Tinha que saber das suas lutas! Mas qual não foi sua surpresa quando os vampiros começaram a falar... sangue animal não era a unica surpresa. A prata não funcionava, também. O estilo de vida daqueles vampiros era diferenciado! No fim, terminaram em uma grande amizade. Aparentemente a raça deles tinham figuras malignas também... seu trabalho estava longe de terminar.! "
+                },
+        "primeiroCenarioErro": {
+            "letra": "B",
+            "texto": "Resposta B)\n Péssima ideia! Acabou perdendo a cabeça... literalmente."
+
+        }
+        
+    }, 
+    //FASE 5 - SE DECIDIU CONVERSAR COM CARLISLE
+    {
+        "pergunta": {
+                    "numero": "5",  
+                    "texto": "Blade se sentiu convencido com a história de Carlisle? A) A história convenceu B)A história não convenceu, partir para luta!"
+        }, 
+        "certa": {
+                "letra": "A",
+                "texto": "Carlisle disse o suficiente! Bebem sangue de animal? Idiotice! Mas fazia sentido, podia ver naqueles olhos dourados. Aquela família nao aparentava ser um perigo em potencial. Ele tinha vampiros piores para destruir... drácula ainda estava a solta.."
+                },
+        "primeiroCenarioErro": {
+            "letra": "B",
+            "texto": "Resposta: B) Hahaha! Vampiros bonzinhos? Ele conhecia o mundo melhor do que aquilo... era hora de dar fim naquela história. Iria para luta!"
+                //Em caso de B, voltar para fase 3
+        }
+        
+    }, 
+    //FASE 6 - 2 RESPOSTAS --> SE ESCOLHEU CONVERSAR COM CARLISLE
+    { 
+       "pergunta": {
+                    "numero": "6",  
+                    "texto": "Blade segue ou vai para casa? A) Seguir B) Ir para casa treinar mais"
+        }, 
+        "certa": {
+                "letra": "A",
+                "texto": "Ele havia chegado muito longe para desistir agora!"
+                },
+        "primeiroCenarioErro": {
+            "letra": "B",
+            "texto": "Cidade estranha com gente esquisita, se os lobisomens já eram assim, melhor nem ver os vampiros. Iria caçar alvos mais fáceis e treinar mais antes de voltar para Forks"
+        }      
+        
+    }
+        
+];
+
+
+const carmillaView = [       //FASE 0
+    {
+            //FASE 0
+        "pergunta":
+        {
+            "numero": "0", 
+            "texto": "Camille descobriu que bella namorava edward. O que fazer? A) Brigar com Edward B) Tentar fazer amizade com edward. "
+
+        },
+        "certa": 
+        {
+            "letra": "B",
+            "texto": "Resposta B)\n Edward desconfia da sua amizade, mas ela é tão encantadora que conquista a todos.      "
+        },
+        "primeiroCenarioErro":
+        {
+            "letra": "A",
+            "texto": "Resposta A)\n Alice previu Camille tentando assassinar Edward. Bella acreditou nela, se afastando da vampira. A família Cullen sabia como destruí-la, e não demorou muito para uma alma milenar sumir da face da terra."
+        }
+       
+    },
+    
+    //FASE 1
+    {
+        "pergunta":
+        {
+            "numero": "1",  
+            "texto": "Pergunta: Carmilla deve aceitar o convite? A) Não / B) Sim"
+        }, 
+        "certa":
+        {
+            "letra": "B",
+            "texto": "Resposta B)\n Carmilla inventa uma desculpa para ficar em casa"
+        },
+        "primeiroCenarioErro": 
+        {
+            "letra": "A",
+            "texto": "A) Carlisle a reconhece e conta do seu passado. A familia Cullen decide que o melhor era exterminá-la... GO "
+
+        }
+    },
+
+    //FASE 2
+    {
+      "pergunta":
+        {
+            "numero": "2",  
+            "texto": "pergunta: Carmilla notou que Edward está desconfiado. O que ela deve fazer: A)Fugir com Bella B)Enfrentar os Cullen" 
+        }, 
+        "certa":  
+        {
+            "letra": "A",
+            "texto": "Resposta C) Bella estava tão fraca que não pôde resistir. Carmilla a levou, e Edward estaria fadado a passa a eternidade solitário. "
+        },
+        "primeiroCenarioErro":
+        {
+            "letra": "B",
+            "texto": "Resposta B)\n Carlisle conhecia suas fraquezas, e, enquanto ela tentava derrotar Alice, outros deles estavam exumando e destruindo seu corpo. Ela não teve muitas chances... "
+        }
+        
+ }
+]
+      
+      
+      
+
+function verifica(personagem, fase, classeAntiga, classeAtual, ClasseModificadora) 
+{    //vai verificar o personagem, a fase e as telas 
+    let conferencia; 
     
     //Personagem DRACULA
     switch (personagem) 
     {
         case 'dracula': //Verifica o personagem
-            let conferencia = conferePergunta(dracView, fase); //confere se a resposta digitada bate com a pergunta e retorna 
-            if (conferencia == true){ //recebe verdadeiro se a resposta estiver certa
+            conferencia = conferePergunta(dracView, fase); //confere se a resposta digitada bate com a pergunta e retorna 
+            if (conferencia == true )
+            { //recebe verdadeiro se a resposta estiver certa
                 mudaPag(classeAntiga, classeAtual); //muda a pagina para uma nova questão 
             }
-            else if (conferencia == false) {
+            else if (conferencia == false )
+            {
                     mudaPag(classeAntiga, "gameOver");//muda a pagina para o endgame
             }
-            
-            else if (conferencia == "rota a")
-                { //Confere as respostas das perguntas com bifurcação, ou seja, apenas duas possibilidades
-                mudaPag(classeAntiga, classeAtual); // Se a resposta que o usuario der estiver dentro do padrão de resposta certa dentro da const do jogo, ele vai seguir para fase ideal em que deveria estar
-                 }
+        
             
             else if (conferencia == "rota b") 
                 { //Se a resposta que o usuario der estiver errada dentro do padrão do jogo, ele retorna uma rota alternativa, a rota B, que leva para uma fase alternativa, passada através da classe modificadora. 
@@ -205,22 +408,49 @@ function verifica(personagem, fase, classeAntiga, classeAtual, ClasseModificador
         //Personagem BLADE    
             
         case 'blade':
-            console.log ("blade");
-            break;
-    }
+            conferencia = conferePergunta(bladeView, fase); //confere se a resposta digitada bate com a pergunta e retorna 
+            if (conferencia == true ){ //recebe verdadeiro se a resposta estiver certa
+                mudaPag(classeAntiga, classeAtual); //muda a pagina para uma nova questão 
+            }
+            else if (conferencia == false ) {
+                    mudaPag(classeAntiga, "gameOver");//muda a pagina para o endgame
+            }
+            
+          else if (conferencia == "rota b") 
+                { //Se a resposta que o usuario der estiver errada dentro do padrão do jogo, ele retorna uma rota alternativa, a rota B, que leva para uma fase alternativa, passada através da classe modificadora. 
+                    mudaPag(classeAntiga, ClasseModificadora); //muda a pagina para uma nova questão do cenário B
+               }
+                    break;
+    
+    
+    //Personagem Carmilla    
+            
+        case 'carmilla':
+ conferencia = conferePergunta(carmillaView, fase); //confere se a resposta digitada bate com a pergunta e retorna 
+            if (conferencia == true ){ //recebe verdadeiro se a resposta estiver certa
+                mudaPag(classeAntiga, classeAtual); //muda a pagina para uma nova questão 
+            }
+            else if (conferencia == false ) {
+                    mudaPag(classeAntiga, "gameOver");//muda a pagina para o endgame
+            }
+            
+          else if (conferencia == "rota b") 
+                { //Se a resposta que o usuario der estiver errada dentro do padrão do jogo, ele retorna uma rota alternativa, a rota B, que leva para uma fase alternativa, passada através da classe modificadora. 
+                    mudaPag(classeAntiga, ClasseModificadora); //muda a pagina para uma nova questão do cenário B
+               }
+                    break;
+    } 
 } 
 
 function conferePerguntaComplexa (resp, view)
 { //Direciona as rotas para perguntas com bifurcação
-    if ( view.certa.letra.toLowerCase() == resp)
-    { 
-        alert ("rota A");
-            return "rota a";
+    if ( view.certa.letra.toLowerCase() == resp.toLowerCase())
+    {       alert(view.certa.texto);
+            return true; //Se a resposta estiver na posição da certa 
     }
     else 
-    { 
-        alert ("rota B");
-        return "rota b";
+    {   alert(view.primeiroCenarioErro.texto);
+        return "rota b"; //cria uma rota diferente, uma bifurcação 
     }
    
     
@@ -239,8 +469,9 @@ function conferePergunta(viewAtual, fase)
                 resposta = confereEntradaValida (resposta, viewAtual[i].pergunta.texto, "complexa"); //Confere se estão digitando A ou B
                 return conferePerguntaComplexa (resposta, viewAtual[i]); //Diz se é rota A ou B, baseado na resposta do usuário para bifurcação
             }
+            
                             
-            else
+            else //Se é uma pergunta normal, com 3 possibilidades de resposta
             {
                 resposta = confereEntradaValida (resposta, viewAtual[i].pergunta.texto, "simples"); //confere A, B ou C
                              
@@ -268,7 +499,7 @@ function conferePergunta(viewAtual, fase)
     } //for
 }
 
-function confereEntradaValida (respDada, questao, tipo){ //Verifica se o usuário está digitando A, B ou C
+function confereEntradaValida (respDada, questao, tipo){ //Verifica se o usuário está digitando A ou B em perguntas bifurcadas
     if (tipo == "complexa") 
     {
         while (respDada.toLowerCase() != 'a' && respDada.toLowerCase() != 'b')
@@ -279,7 +510,7 @@ function confereEntradaValida (respDada, questao, tipo){ //Verifica se o usuári
         }
     }
     
-    else if (tipo == "simples")
+    else if (tipo == "simples") //Verifica resposta A, B, C em perguntas normais 
     {        while (respDada.toLowerCase() != 'a' && respDada.toLowerCase() != 'b' && respDada.toLowerCase() != 'c') //verifica 
         {
             alert("Resposta Inválida! Digite A, B ou C");
@@ -298,6 +529,7 @@ return respDada;
 }
 
 function mudaPag(anterior, nova){ //Muda as paginas de pergunta
+    alert(nova);
 
     let faseAnterior = document.querySelector("."+anterior); //tira a classe ACTIVE e coloca INACTIVE para a div ficar escondida 
        faseAnterior.classList.remove('active');
@@ -305,7 +537,15 @@ function mudaPag(anterior, nova){ //Muda as paginas de pergunta
  
     
         let faseAtual = document.querySelector("."+nova); //adiciona a classe ACTIVE na div da vez
-        faseAtual.classList.add('active');
+        if (faseAtual.classList.contains("inactive") == true)
+            {
+                faseAtual.classList.replace("inactive", "active")
+            }
+        else {                faseAtual.classList.add('active');
+
+            
+       }
+    
 
     
     

@@ -66,8 +66,9 @@ figure {
 
 figure label {
     color: white;
-    
 }
+
+
 main h2{
     font-family: 'Tapestry', cursive;
     font-weight: 600;
@@ -92,7 +93,15 @@ main h2{
       width: 100%;
       object-fit: contain;
     min-height: 194.93;
+    max-height: 194.93;
+webkit-transition: all 0.7s ease;
+ transition: all 0.7s ease;
 }
+
+#personagens figure img:hover {
+ -webkit-transform: scale(1.1);
+ transform: scale(1.2);
+
 
 @media screen and (max-width: 600px)
 {
@@ -123,5 +132,6 @@ font-size: 20px;
     {
       width: 40%;
       object-fit: contain;
+        
     }
 }
