@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     
 <link href="../css/dracStyle.css" rel = "stylesheet"/>
+<link href="../css/pageBaseStyle.css" rel = "stylesheet"/>
     
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +28,7 @@
 
 <main>
     <!-- INTRODUÇÃO -->
-    <div class="introducao-drac active"> <!--FASE ZERO -->
+    <div class="introducao-drac fases active"> <!--FASE ZERO -->
         <p>
             O que o grande Conde Drácula em sua solitária fortaleza na Romênia esperava das suas noites era ouvir o grito dos humanos enquando sugava suas almas com suas presas. O que vinha o acordando, entretanto, eram vozes adolescentes agudas, que, sobretudo,  gritavam pelo seu nome e imploravam por uma transformação que só ele poderia realizar. <br> Não demorou para que descobrisse o motivo daquela confusão. Estava sob o efeito fervoroso do maior lançamento daquele ano: Crepúsculo! Extremamante debilitado pela interrupção de seu hibernar diurno e o espaçamento de suas caçadas, o Conde decidiu que estava na hora de tomar medidas drásticas. Iria encontrar os causadores do seu caos...        </p>
         
@@ -85,7 +86,7 @@
     
     <div class="fase-seis fases"> <!--FASE 6 - opção OUVIR  -->
         <p>
-            Vampiros que brilham? Se alimentam de sangue animal? Tem poderes mentais? Que história era aquela? Parecia mentira! Mas quando Carlisle - pelo menos assim ele tinha se identificado - contou o motivo de seus olhos dourados, parecia que tudo estava se encaixando. De um jeito assustador, mas bem palpável. Uma familia de vampiros do bem... agora entendia a motivação daquela história ter viralizado entre os adolescentes. No fim da história, Carlisle perguntou o que ele gostaria de fazer mediante toda aquela bizarrice...
+            Vampiros que brilham? Se alimentam de sangue animal? Tem variados poderes mentais? Que história era aquela? Parecia mentira! Mas quando Carlisle - pelo menos assim ele tinha se identificado - contou o motivo de seus olhos dourados, parecia que tudo estava se encaixando. De um jeito assustador, mas bem palpável. Uma familia de vampiros do bem... agora entendia a motivação daquela história ter viralizado entre os adolescentes. No fim da história, Carlisle perguntou o que ele gostaria de fazer mediante toda aquela bizarrice...
         </p>
     
         <button onclick='verifica("dracula","6","fase-seis", "fase-oito", "fase-cinco")'>Prosseguir</button>
@@ -103,12 +104,14 @@
     
       <div class="gameOver fases">
         <h1> Game Over </h1>
-    <button> <a href = "index.html"> Voltar! </a></button>
+          <p> Você tentou bravamente, mas não foi dessa vez! </p> 
+    <button class="retorno"> <a href = "index.html"> Voltar! </a></button>
     </div>
     
       <div class="gameOver-vitoria fases">
-        <h1> Game Over - VITÓRIA </h1>
-    <button> <a href = "index.html"> Voltar! </a></button>
+        <h1> VITÓRIA </h1>
+        <p> Você jogou muito bem! </p> 
+    <button class="retorno"> <a href = "index.html"> Voltar! </a></button>
     </div>
     
 </main>

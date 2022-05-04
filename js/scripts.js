@@ -72,7 +72,7 @@ const dracView =  //perguntas e respostas pré definidas para a rota do drácula
     {
       "pergunta": {
                     "numero": "3",  
-                    "texto": "Os Cullen falam demais! Qual ação Drácula deve tomar diante disso?  \n  A) OUVIR ELES FALAREM COM CURIOSIDADE  \n B)ATACAR \n C) IGNORAR O DISCURSO "
+                    "texto": "Os Cullen falam demais! Qual ação Drácula deve tomar diante disso?  \n  A) Ouvir a hitória com curiosidade  \n B)Atacar \n C) Ignorar o discurso"
         },    
         "certa": {
                 "letra": "A",
@@ -80,11 +80,11 @@ const dracView =  //perguntas e respostas pré definidas para a rota do drácula
                 },
         "primeiroCenarioErro": {
             "letra": "B",
-            "texto": "Resposta: B)Os rosnados acordaram o pai de Bela, que, armado, saiu de casa desferindo três tiros no Conde Drácula. Ele quis rir por um momento: quão vergonhosa seria a morte por mãos humanas? Mas as balas de Forks tem resquícios de prata, e seu corpo gélido foi ao chão antes mesmo que pudesse terminar de ouvir Bela gritar em desespero"
+            "texto": "Resposta: B)\n Os rosnados acordaram o pai de Bela, que, armado, saiu de casa desferindo três tiros no Conde Drácula. Ele quis rir por um momento: quão vergonhosa seria a morte por mãos humanas? Mas as balas de Forks tem resquícios de prata, e seu corpo gélido foi ao chão antes mesmo que pudesse terminar de ouvir Bela gritar em desespero"
         },
          "segundoCenarioErro": {
             "letra": "C",
-            "texto": "Drácula deveria ter prestado mais atenção! Sem muita paciência para aqueles vampiros esquisitos, decidiu que era a hora perfeita para mostrar como se comportavam vampiros de verdade. Sua estratégia de montar um exército, entretando, chamou a atenção dos Volturi e ele foi dilacerado"
+            "texto": "Resposta: C) \n Drácula deveria ter prestado mais atenção! Sem muita paciência para aqueles vampiros esquisitos, decidiu que era a hora perfeita para mostrar como se comportavam vampiros de verdade. Sua estratégia de montar um exército, entretando, chamou a atenção dos Volturi e ele foi dilacerado"
 
         }
  },
@@ -109,7 +109,7 @@ const dracView =  //perguntas e respostas pré definidas para a rota do drácula
     {
         "pergunta": {
                     "numero": "5",  
-                    "texto": "Drácula decide que vai guerrear, mesmo em desvantagem! Qual golpe ele deve usar? A) Utilizar presas mortais / B) Utilizar blindagem de mente"
+                    "texto": "Drácula decide que vai guerrear, mesmo em desvantagem! Qual golpe ele deve usar? A) Utilizar presas mortais / B) Utilizar blindagem de mente C)Utilizar vôo do morcego"
         }, 
         "certa": {
                 "letra": "B",
@@ -135,11 +135,11 @@ const dracView =  //perguntas e respostas pré definidas para a rota do drácula
         }, 
         "certa": {
                 "letra": "A",
-                "texto": "Drácula decide que vale a pena experimentar algo diferente!"
+                "texto": "Resposta A) \n Drácula decide que vale a pena experimentar algo diferente!"
                 },
         "primeiroCenarioErro": {
             "letra": "B",
-            "texto": "Drácula não engoliu aquelas explicações. Vampiros com poderes? Estava claro que eram uma ameaça! Se esforçou para nublar seus pensamentos... era hora de mostrar quem mandava!"
+            "texto": "Resposta B) \n Drácula não engoliu aquelas explicações. Vampiros com poderes? Estava claro que eram uma ameaça! Se esforçou para nublar seus pensamentos... era hora de mostrar quem mandava!"
         }      
         
     }, 
@@ -155,16 +155,16 @@ const dracView =  //perguntas e respostas pré definidas para a rota do drácula
         }, 
         "certa": {
                 "letra": "C",
-                "texto": "Não era igual, mas também era apetitoso... e a caçada? Emocionante. Com o tempo, Drácula ganhou poderosos olhos dourados. E, ainda que não pudesse sair de dia como os outros, via o olhar de curioso por poder dormir enquanto eles estavam fadados a uma eternidade acordados. Aquela família era gente boa, estava até pensanodo em adotar o nome Cullen."
+                "texto": "Resposta C) \n Não era igual, mas também era apetitoso... e a caçada? Emocionante. Com o tempo, Drácula ganhou poderosos olhos dourados. E, ainda que não pudesse sair de dia como os outros, via o olhar de curioso por poder dormir enquanto eles estavam fadados a uma eternidade acordados. Aquela família era gente boa, estava até pensanodo em adotar o nome Cullen."
                 },
         "primeiroCenarioErro": {
             "letra": "B",
-            "texto": "Eca! No primeiro gole, já perceu que aquilo não servia para si. Cansado daquele vai e vem e muito mais fraco do que gostaria, Drácula decidiu que voltaria para casa. Era melhor viver a eternidade com a janta gritando seu nome do que lutar com vmapiros e lobos esquisitos"
+            "texto": "Resposta B) \n Eca! No primeiro gole, já perceu que aquilo não servia para si. Cansado daquele vai e vem e muito mais fraco do que gostaria, Drácula decidiu que voltaria para casa. Era melhor viver a eternidade com a janta gritando seu nome do que lutar com vmapiros e lobos esquisitos"
 
         },
           "segundoCenarioErro": {
             "letra": "A",
-            "texto": "Era impossível gostar daquilo! Tentando não demonstrar muita repulsa, Draco deu adeus. Mas sua soberba não o deixou acreditar nas palavras dos Cullens e - já com fome, decidiu se alimentar por Forks mesmo. Mal havia cravado seus dentes no pescoço de uma vítima qualquer quando lobos uivaram, saindo da escuridão... ele simplesmente não podia mais ver nada"
+            "texto": "Resposta C) \n Era impossível gostar daquilo! Tentando não demonstrar muita repulsa, Draco deu adeus. Mas sua soberba não o deixou acreditar nas palavras dos Cullens e - já com fome, decidiu se alimentar por Forks mesmo. Mal havia cravado seus dentes no pescoço de uma vítima qualquer quando lobos uivaram, saindo da escuridão... ele simplesmente não podia mais ver nada"
 
         },
           
@@ -250,11 +250,11 @@ const bladeView =  //perguntas e respostas pré definidas para a rota do drácul
         },    
         "certa": {
                 "letra": "A",
-                "texto": "Resposta A)Drácula deciciu ouvir o que o vampiro tinha a dizer, mas já estava cansado daquela falta de ação."
+                "texto": "Resposta A) \n Drácula deciciu ouvir o que o vampiro tinha a dizer, mas já estava cansado daquela falta de ação."
                 },
         "primeiroCenarioErro": {
             "letra": "B",
-            "texto": "Resposta B)Não queria ladainhas, queria resolver seu problema! Iria com tudo de uma vez!"
+            "texto": "Resposta B) \n Não queria ladainhas, queria resolver seu problema! Iria com tudo de uma vez!"
         }
     },
     //FASE 4 -- SE DECIDIU LUTAR NA FASE 3
@@ -282,11 +282,11 @@ const bladeView =  //perguntas e respostas pré definidas para a rota do drácul
         }, 
         "certa": {
                 "letra": "A",
-                "texto": "Carlisle disse o suficiente! Bebem sangue de animal? Idiotice! Mas fazia sentido, podia ver naqueles olhos dourados. Aquela família nao aparentava ser um perigo em potencial. Ele tinha vampiros piores para destruir... drácula ainda estava a solta.."
+                "texto": "Resposta A) \n Carlisle disse o suficiente! Bebem sangue de animal? Idiotice! Mas fazia sentido, podia ver naqueles olhos dourados. Aquela família nao aparentava ser um perigo em potencial. Ele tinha vampiros piores para destruir... drácula ainda estava a solta.."
                 },
         "primeiroCenarioErro": {
             "letra": "B",
-            "texto": "Resposta: B) Hahaha! Vampiros bonzinhos? Ele conhecia o mundo melhor do que aquilo... era hora de dar fim naquela história. Iria para luta!"
+            "texto": "Resposta: \n B) Hahaha! Vampiros bonzinhos? Ele conhecia o mundo melhor do que aquilo... era hora de dar fim naquela história. Iria para luta!"
                 //Em caso de B, voltar para fase 3
         }
         
@@ -299,11 +299,11 @@ const bladeView =  //perguntas e respostas pré definidas para a rota do drácul
         }, 
         "certa": {
                 "letra": "A",
-                "texto": "Ele havia chegado muito longe para desistir agora!"
+                "texto": "Resposta A)\n Ele havia chegado muito longe para desistir agora!"
                 },
         "primeiroCenarioErro": {
             "letra": "B",
-            "texto": "Cidade estranha com gente esquisita, se os lobisomens já eram assim, melhor nem ver os vampiros. Iria caçar alvos mais fáceis e treinar mais antes de voltar para Forks"
+            "texto": "Resposta B) \n Cidade estranha com gente esquisita, se os lobisomens já eram assim, melhor nem ver os vampiros. Iria caçar alvos mais fáceis e treinar mais antes de voltar para Forks"
         }      
         
     }
@@ -311,9 +311,8 @@ const bladeView =  //perguntas e respostas pré definidas para a rota do drácul
 ];
 
 
-const carmillaView = [       //FASE 0
-    {
-            //FASE 0
+const carmillaView = [    
+    {    //FASE 0
         "pergunta":
         {
             "numero": "0", 
@@ -348,7 +347,7 @@ const carmillaView = [       //FASE 0
         "primeiroCenarioErro": 
         {
             "letra": "A",
-            "texto": "A) Carlisle a reconhece e conta do seu passado. A familia Cullen decide que o melhor era exterminá-la... GO "
+            "texto": "Resposta A)\n Carlisle a reconhece e conta do seu passado. A familia Cullen decide que o melhor era exterminá-la... GO "
 
         }
     },
@@ -363,7 +362,7 @@ const carmillaView = [       //FASE 0
         "certa":  
         {
             "letra": "A",
-            "texto": "Resposta C) Bella estava tão fraca que não pôde resistir. Carmilla a levou, e Edward estaria fadado a passa a eternidade solitário. "
+            "texto": "Resposta A)\n Bella estava tão fraca que não pôde resistir. Carmilla a levou, e Edward estaria fadado a passa a eternidade solitário. "
         },
         "primeiroCenarioErro":
         {
@@ -371,8 +370,8 @@ const carmillaView = [       //FASE 0
             "texto": "Resposta B)\n Carlisle conhecia suas fraquezas, e, enquanto ela tentava derrotar Alice, outros deles estavam exumando e destruindo seu corpo. Ela não teve muitas chances... "
         }
         
- }
-]
+    }
+];
       
       
       
@@ -529,7 +528,6 @@ return respDada;
 }
 
 function mudaPag(anterior, nova){ //Muda as paginas de pergunta
-    alert(nova);
 
     let faseAnterior = document.querySelector("."+anterior); //tira a classe ACTIVE e coloca INACTIVE para a div ficar escondida 
        faseAnterior.classList.remove('active');
